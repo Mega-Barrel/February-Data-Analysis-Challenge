@@ -16,3 +16,4 @@ LIMIT 5;
 DESCRIBE TABLE la;
 DESCRIBE TABLE ny;
 
+SELECT COUNT(*) FROM airbnb_ratings;
