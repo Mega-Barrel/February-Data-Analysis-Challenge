@@ -1,5 +1,4 @@
 .vscode
-/Workbook
 __pycache__/
 /SQL/queries.sql
 .ipynb_checkpoints
