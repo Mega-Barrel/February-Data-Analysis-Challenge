@@ -25,7 +25,9 @@ SELECT MIN(`Maximum nights`) from la;
 
 -- Question 7: Price
 SELECT AVG(Price) from la;
-SELECT `Room type`, AVG(Price) AS `Avg Prices`, COUNT(`Room type`) AS Total_Room FROM la GROUP BY (`Room type`) ORDER BY AVG(Price);  
+
+SELECT `Room type`, AVG(Price) AS `Avg Prices`, COUNT(`Room type`) AS Total_Room 
+    FROM la GROUP BY (`Room type`) ORDER BY AVG(Price);  
 
 -- Question 8: Number of reviews
 SELECT `Host Name`, COUNT(`Host Name`) AS `Host`,  `Number of reviews` FROM la GROUP BY `Number of reviews` ORDER BY COUNT(`Host Name`), `Number of reviews` DESC;
