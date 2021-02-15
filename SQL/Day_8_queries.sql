@@ -1,12 +1,14 @@
 -- Questions for All the Table
 
+USE feb_challange;
+
 -- 1. Count Listing_id, with name mapped(INNER JOIN)
-SELECT la.`listing ID`, la.`Host Name` AS Name,  COUNT(airbnb_ratings.`listing_id`) AS Count
-FROM la
-INNER JOIN airbnb_ratings
-ON la.`listing ID` = airbnb_ratings.`listing_id`
+SELECT `la`.`listing ID`, `la`.`Host Name` AS Name,  COUNT(`airbnb_ratings`.`listing_id`) AS Count
+FROM `la`
+INNER JOIN `airbnb_ratings`
+ON `la`.`listing ID` = `airbnb_ratings`.`listing_id`
 GROUP BY `listing_id`
-ORDER BY COUNT(airbnb_ratings.`listing_id`) DESC;
+ORDER BY COUNT(`airbnb_ratings`.`listing_id`) DESC;
 
 
 
